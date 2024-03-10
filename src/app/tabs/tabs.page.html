@@ -1,20 +1,26 @@
 <ion-tabs>
+    <ion-tab-bar slot="bottom" class="style-tabs">
+        <ion-tab-button tab="albums" href="/tabs/albums">
+            <ion-icon aria-hidden="true" name="albums-outline"></ion-icon>
+            <ion-label>Carpetas</ion-label>
+        </ion-tab-button>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1" href="/tabs/tab1">
-      <ion-icon aria-hidden="true" name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
+        <ion-tab-button>
+        </ion-tab-button>
 
-    <ion-tab-button tab="tab2" href="/tabs/tab2">
-      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="photos" href="/tabs/photos">
+            <ion-icon aria-hidden="true" name="image-outline"></ion-icon>
+            <ion-label>Fotos</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
 
-    <ion-tab-button tab="tab3" href="/tabs/tab3">
-      <ion-icon aria-hidden="true" name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-
+    <!-- take photo -->
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" class="fab-contain">
+        <ion-fab-button (click)="addNewPhoto()" class="button-fab" *ngIf="showAddPhotos">
+            <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)="addNewAlbum()" class="button-fab" *ngIf="!showAddPhotos">
+            <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
 </ion-tabs>

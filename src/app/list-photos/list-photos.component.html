@@ -1,0 +1,15 @@
+<div class="responsive-style" *ngIf="photos">
+    <div class="grid-container">
+        <div class="container-card" [class.cursor]="selection" *ngFor="let photo of photos;"
+            (click)="selectCursor(photo)">
+            <div *ngIf="photo.selected" class="selected">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+            <div class="btn-deleted" (click)="deletedPhoto(photo)" *ngIf="!selection">
+                <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-img class="photo" [src]="photo.webPath"></ion-img>
+        </div>
+    </div>
+</div>

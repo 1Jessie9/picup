@@ -1,0 +1,5 @@
+<app-header name="Fotos"></app-header>
+
+<ion-content [fullscreen]="true">
+    <app-list-photos [photosInput]="photoService.photos" (clickDeleted)="deletedPhoto($event)"></app-list-photos>
+</ion-content>

@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'gallery',
+  appId: 'com.picup.picup',
+  appName: 'PicUp',
   webDir: 'www',
   server: {
     androidScheme: 'https'

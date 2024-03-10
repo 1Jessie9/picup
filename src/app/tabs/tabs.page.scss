@@ -1,1 +1,20 @@
+.style-tabs {
+    width: 90%;
+    max-width: 400px !important;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
+.fab-contain {
+    margin-bottom: 30px;
+
+    .button-fab {
+        width: 60px;
+        height: 60px;
+
+        ion-icon {
+            font-size: 30px;
+        }
+    }
+}
