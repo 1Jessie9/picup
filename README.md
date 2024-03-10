@@ -1,6 +1,6 @@
-#Profundización
-## Marzo 09 de 2024
-### Yessica Paola Cardenas Niño
+# Profundización
+## Yessica Paola Cardenas Niño
+### Marzo 09 de 2024
 
 Aplicación de galería PicUp
 :Ionic, Capacitor y Angular
