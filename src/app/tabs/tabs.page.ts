@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '../services/photo.service';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
     templateUrl: 'tabs.page.html',
     styleUrls: ['tabs.page.scss']
 })
-export class TabsPage {
+export class TabsPage implements OnInit {
     public showAddPhotos: boolean = true;
     public alertButtons: string[] = ['¡Listo!'];
     public alertInputs = [
@@ -28,6 +28,9 @@ export class TabsPage {
         public router: Router,
         public alertController: AlertController,
     ) {
+    }
+
+    async ngOnInit() {
         this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: any) => {
             const showAddPhotos = [
                 '/tabs/photos',

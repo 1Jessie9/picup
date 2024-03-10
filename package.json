@@ -2,7 +2,7 @@
     "name": "picup",
     "version": "0.0.1",
     "author": "Yess Codes",
-    "homepage": "https://github.com/1Jessie9/picup",
+    "homepage": "https://1jessie9.github.io/picup/",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -10,7 +10,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "lint": "ng lint",
-        "gh-pages": "ng build --base-href 'https://github.com/1Jessie9/picup' && npx ngh --dir=www/"
+        "gh-pages": "ng build --base-href 'https://1jessie9.github.io/picup/' && npx ngh --dir=www/"
     },
     "private": true,
     "dependencies": {
