@@ -29,7 +29,6 @@ export class TabsPage {
         public alertController: AlertController,
     ) {
         this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: any) => {
-            // no show o life-insurance
             const showAddPhotos = [
                 '/tabs/photos',
             ];
